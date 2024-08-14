@@ -1,0 +1,118 @@
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    margin-bottom: 20px;
+    transition: 3s;
+}
+
+.square:hover{
+    background-color: blue;
+    transform: rotate(360deg);
+}
+.square2{
+    width: 100px;
+    height: 100px;
+    background-color: #0f0;
+    /* transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s; */
+    transition: width 2s ease-in 1s;
+    -webkit-transition:width 2s ease-in 1s;
+
+}
+.square2:hover{
+width: 100%;
+}
+.H1{
+    font-family: cursive;
+    font-size: 25px;
+    color: blue;
+    text-align: center;
+    animation-name: text-movement;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+
+@keyframes text-movement{
+   0%{
+    transform: translatex(100%);
+   }
+   50%{
+    font-family: sans-serif;
+    color: green;
+    font-size: 40px;
+    transform: translate(100%, -0%);
+   }
+   60%{
+    color:lightblue;
+   }
+   100%{
+    transform: translatex(0%);
+   }
+}
+
+.shape{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    animation-name:movement;
+    animation-duration:2s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+@keyframes movement{
+    0%{
+        margin-top: 0px;
+        margin-left:0px;
+        background-color: blue;
+       
+    }
+    25%{
+        margin-left:200px;
+        margin-top: 0px;
+        background-color: yellow;
+      
+    }
+    50%{
+        background-color: black;
+        margin-left: 200px;
+        margin-top: 200px;
+        
+    }
+    75%{
+         margin-left:0px;
+         margin-top: 200px;
+         background-color: green;
+       
+    }
+    100%{
+        margin-top:0px;
+       margin-right:0px;
+       background-color: blue;
+      
+      
+    }
+  
+}
+
+
+img{
+    margin-top: 5%;
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+       transform: rotate(360deg); 
+    }
+}
